@@ -1,0 +1,35 @@
+{
+  "name": "c9api001",
+  "version": "0.0.1",
+  "description": "Konato Free Code Camp URL Shortener Api Project",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konato/fccapi03"
+  },
+  "homepage": "",
+  "bugs": "",
+  "keywords": [
+    "Node",
+    "javascript",
+    "boilerplate"
+  ],
+  "scripts": {
+    "test": "tape tests/**/*.js"
+  },
+  "author": "Stephane Rousseau",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.12.4",
+    "express-session": "^1.11.3",
+    "googleapis": "^5.2.1",
+    "multer": "^1.1.0",
+    "nedb": "^1.8.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "supertest": "^1.2.0",
+    "tape": "^4.5.1"
+  }
+}

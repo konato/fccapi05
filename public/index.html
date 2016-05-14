@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Konato FreeCodeCamp Images Search Microservice</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body><div class="container">
+            <h1 class="header">
+                Konato FreeCodeCamp File Metadata Microservice
+            </h1>
+            <h3>Should replicate the following File Metadata microservice https://cryptic-ridge-9197.herokuapp.com/</h3>
+            <blockquote>
+                User stories:<ol>
+                <li> I can submit a FormData object that includes a file upload.</li>
+                
+                <li> When I submit something, I will receive the file size in bytes within the JSON response</li>
+
+                </ol>
+
+            <h3>Example usage:</h3>
+            <a href="https://freecodecampapi05-stephaner.c9users.io/">https://freecodecampapi05-stephaner.c9users.io/</a>
+            <h3>Example output:</h3>
+
+            <code>[{"file": test.txt, size: 1024}]</code>
+        </div>
+        <div class="container">
+        <h3>Try it here:</h3>
+        <form role="form" action="api/filesize" enctype="multipart/form-data" method="post" size="40">
+        <span class="btn btn-default btn-file">
+        Choose File... <input type="file" name="fileName" onchange="$('#uploadFileName').html($(this).val());">
+        </span>
+        <span class='label label-info' id="uploadFileName"></span>
+        <div><button type="submit" class="btn btn-default">Submit</button></div>
+        
+        </form>
+        </div>
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
+
